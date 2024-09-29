@@ -192,3 +192,75 @@ body::after {
     background-color: var(--accent-color);
     box-shadow: 0 0 10px var(--accent-color);
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-content {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        width: auto;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        width: auto;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 0.5rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .name {
+        font-size: 1.3rem;
+    }
+
+    #btnVolverArriba {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    nav ul {
+        gap: 0.3rem;
+    }
+
+    nav ul li a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.9rem;
+    }
+}
